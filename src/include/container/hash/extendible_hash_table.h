@@ -24,7 +24,7 @@
 #include <vector>
 
 #include "container/hash/hash_table.h"
-
+//todo
 namespace bustub {
 
 /**
@@ -196,6 +196,7 @@ class ExtendibleHashTable : public HashTable<K, V> {
   auto GetGlobalDepthInternal() const -> int;
   auto GetLocalDepthInternal(int dir_index) const -> int;
   auto GetNumBucketsInternal() const -> int;
+  void InsertInternal(const K &key, const V &value);
 };
 
 }  // namespace bustub
